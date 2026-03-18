@@ -193,6 +193,10 @@
       padding: 7rem 5rem 7rem;
       position: relative;
       z-index: 2;
+      background:
+        radial-gradient(ellipse 80% 60% at 0% 80%,  rgba(112,24,24,0.10) 0%, transparent 55%),
+        radial-gradient(ellipse 60% 80% at 100% 20%, rgba(196,154,46,0.06) 0%, transparent 50%),
+        linear-gradient(175deg, #0d0b09 0%, #1e1b17 40%, #221e18 100%);
     }
 
     /* right column — architectural visual */
@@ -1136,6 +1140,8 @@
       line-height: 1.8;
     }
 
+    .season-inner { padding: 9rem 5rem; }
+
     /* ══════════════════════════════════════
        RESPONSIVE — 1200px
        ══════════════════════════════════════ */
@@ -1143,7 +1149,7 @@
       nav { padding: 1.4rem 3rem; }
       nav.scrolled { padding: 1rem 3rem; }
       .hero-left { padding: 7rem 3rem 5rem; }
-      #season > div { padding: 6rem 3rem !important; }
+      .season-inner { padding: 6rem 3rem; }
       .season-header { flex-direction: column; align-items: flex-start; gap: 1.5rem; }
       .season-header-right { text-align: left; max-width: 100%; }
       .productions-grid { grid-template-columns: repeat(2, 1fr); }
@@ -1177,7 +1183,7 @@
       .pf-visual { display: none; }
       .pf-text { padding: 3rem 2.5rem; }
       .productions-grid { grid-template-columns: 1fr; }
-      #season > div { padding: 5rem 2.5rem !important; }
+      .season-inner { padding: 5rem 2.5rem; }
 
       #about { grid-template-columns: 1fr; gap: 2rem; padding: 5rem 2.5rem; }
       .about-sticky { position: static; }
@@ -1219,7 +1225,7 @@
       .hero-eyeline { margin-bottom: 1.5rem; }
 
       /* ── Season — full width, no side margins ── */
-      #season > div { padding: 3rem 0 !important; }
+      .season-inner { padding: 3rem 0; } .season-header { padding: 0 1.2rem; } .production-featured, .productions-grid { border-left: none; border-right: none; }
       #season .season-header { padding: 0 1.2rem; margin-bottom: 2rem; }
       .production-featured { border-left: none; border-right: none; }
       .pf-text { padding: 2rem 1.2rem; }
