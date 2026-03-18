@@ -1180,7 +1180,12 @@
       .hero-right::before { display: none; }
 
       .production-featured { grid-template-columns: 1fr; }
-      .pf-visual { display: none; }
+      .pf-visual {
+        display: block;
+        height: 85vw;
+        max-height: 420px;
+        min-height: 0;
+      }
       .pf-text { padding: 3rem 2.5rem; }
       .productions-grid { grid-template-columns: 1fr; }
       .season-inner { padding: 5rem 2.5rem; }
@@ -1214,26 +1219,30 @@
       .lang-switcher { margin-left: 0.5rem; }
       .lang-btn { padding: 0.4rem 0.6rem; font-size: 0.5rem; }
 
-      /* ── Hero — no min-height, just natural content height ── */
+      /* ── Hero — arch as background ── */
       .hero-left {
         padding: 4.5rem 1.2rem 3rem;
         min-height: auto;
+        background:
+          linear-gradient(to bottom, rgba(19,16,8,0.75) 0%, rgba(19,16,8,0.88) 60%, var(--stone) 100%),
+          url("data:image/svg+xml,%3Csvg viewBox='0 0 600 900' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='600' height='900' fill='%230d0b09'/%3E%3Cpath d='M120 900 L120 420 Q120 140 300 140 Q480 140 480 420 L480 900' fill='%230a0806'/%3E%3Cpath d='M120 900 L120 420 Q120 140 300 140 Q480 140 480 420 L480 900' stroke='%232a2318' stroke-width='2' fill='none'/%3E%3Cpath d='M155 900 L155 428 Q155 178 300 178 Q445 178 445 428 L445 900' stroke='%231e1a12' stroke-width='1' fill='none'/%3E%3Crect x='80' y='355' width='480' height='30' fill='%23181512'/%3E%3Crect x='80' y='400' width='42' height='500' fill='%23161310'/%3E%3Crect x='478' y='400' width='42' height='500' fill='%23161310'/%3E%3C/svg%3E") center/cover no-repeat;
       }
+
       .hero-rule { margin: 1.2rem 0; }
       .hero-sub { margin-bottom: 2rem; font-size: 0.95rem; }
       .hero-actions { flex-direction: column; align-items: flex-start; gap: 1rem; }
       .hero-eyeline { margin-bottom: 1.5rem; }
 
-      /* ── Season — full width, no side margins ── */
-      .season-inner { padding: 3rem 0; } .season-header { padding: 0 1.2rem; } .production-featured, .productions-grid { border-left: none; border-right: none; }
-      #season .season-header { padding: 0 1.2rem; margin-bottom: 2rem; }
-      .production-featured { border-left: none; border-right: none; }
+      /* ── Season — cards full width ── */
+      .season-inner { padding: 3rem 0; }
+      .season-header { padding: 0 1.2rem; margin-bottom: 2rem; }
+      .production-featured { border-left: none; border-right: none; border-top: none; }
+      .production-featured::before { display: none; }
       .pf-text { padding: 2rem 1.2rem; }
       .pf-title { font-size: 2rem; }
       .pf-meta { flex-direction: column; align-items: flex-start; gap: 1rem; }
-      .productions-grid { border-left: none; border-right: none; }
+      .productions-grid { border-left: none; border-right: none; width: 100%; }
       .prod-card { padding: 2rem 1.2rem; }
-      .season-header { margin-bottom: 2rem; }
 
       /* ── About ── */
       #about { padding: 3.5rem 1.2rem; }
