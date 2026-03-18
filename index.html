@@ -275,7 +275,7 @@
           </div>
         </div>
         <div class="pf-visual">
-          <svg class="pf-visual-svg" viewBox="0 0 500 620" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <svg class="pf-visual-svg" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
             <defs>
               <radialGradient id="bgH" cx="50%" cy="45%" r="60%">
                 <stop offset="0%"   stop-color="#2e2618"/>
@@ -283,7 +283,7 @@
                 <stop offset="100%" stop-color="#131008"/>
               </radialGradient>
               <radialGradient id="centerGlow" cx="50%" cy="50%" r="40%">
-                <stop offset="0%"   stop-color="#a08030" stop-opacity="0.20"/>
+                <stop offset="0%"   stop-color="#a08030" stop-opacity="0.22"/>
                 <stop offset="60%"  stop-color="#806020" stop-opacity="0.07"/>
                 <stop offset="100%" stop-color="#806020" stop-opacity="0"/>
               </radialGradient>
@@ -294,281 +294,120 @@
             </defs>
 
             <!-- Background -->
-            <rect width="500" height="620" fill="url(#bgH)"/>
-            <ellipse cx="250" cy="350" rx="210" ry="190" fill="url(#centerGlow)"/>
+            <rect width="500" height="500" fill="url(#bgH)"/>
+            <ellipse cx="250" cy="270" rx="200" ry="180" fill="url(#centerGlow)"/>
 
-            <!-- ── HAMLET title ── -->
-            <text x="250" y="175"
+            <!-- Corner marks -->
+            <path d="M36 36 L36 62 M36 36 L62 36" stroke="#4a3828" stroke-width="1" fill="none"/>
+            <path d="M464 36 L464 62 M464 36 L438 36" stroke="#4a3828" stroke-width="1" fill="none"/>
+            <path d="M36 464 L36 438 M36 464 L62 464" stroke="#4a3828" stroke-width="1" fill="none"/>
+            <path d="M464 464 L464 438 M464 464 L438 464" stroke="#4a3828" stroke-width="1" fill="none"/>
+
+            <!-- HAMLET title -->
+            <text x="250" y="68"
                   text-anchor="middle"
                   font-family="'Cinzel', Georgia, serif"
                   font-weight="900"
-                  font-size="52" fill="#8a6a1e"
+                  font-size="44" fill="#8a6a1e"
                   letter-spacing="10">HAMLET</text>
-            <line x1="165" y1="191" x2="335" y2="191" stroke="#5a4410" stroke-width="0.8" opacity="0.7"/>
+            <line x1="165" y1="80" x2="335" y2="80" stroke="#5a4010" stroke-width="0.8" opacity="0.7"/>
 
-            <!-- ══════════════════════
-                 HAND — open palm from below
-                 ══════════════════════ -->
-            <path d="M148 460
-                     Q135 448 138 428 Q140 412 150 405
-                     Q160 397 175 400
-                     L188 387 Q195 376 205 378 Q213 380 213 392 L212 403
-                     L224 382 Q230 370 242 372 Q251 374 251 387 L250 400
-                     L258 378 Q265 365 277 367 Q286 369 286 382 L284 397
-                     L293 383 Q299 374 310 377 Q317 381 315 394 L310 410
-                     Q330 397 346 403 Q359 410 356 427
-                     Q352 442 338 450
-                     L300 468 Q275 478 250 480
-                     Q220 482 195 476
-                     L165 465 Z"
-                  fill="#a07828" opacity="0.12"/>
-            <path d="M148 460
-                     Q135 448 138 428 Q140 412 150 405
-                     Q160 397 175 400
-                     L188 387 Q195 376 205 378 Q213 380 213 392 L212 403
-                     L224 382 Q230 370 242 372 Q251 374 251 387 L250 400
-                     L258 378 Q265 365 277 367 Q286 369 286 382 L284 397
-                     L293 383 Q299 374 310 377 Q317 381 315 394 L310 410
-                     Q330 397 346 403 Q359 410 356 427
-                     Q352 442 338 450
-                     L300 468 Q275 478 250 480
-                     Q220 482 195 476
-                     L165 465 Z"
-                  stroke="#a07828" stroke-width="1.3" fill="none"/>
-
-            <!-- Thumb -->
-            <path d="M148 460 Q136 475 138 492 Q141 508 153 513 Q167 516 174 503 Q180 490 175 474 L165 465"
-                  stroke="#a07828" stroke-width="1.3" fill="none"/>
-            <path d="M148 460 Q136 475 138 492 Q141 508 153 513 Q167 516 174 503 Q180 490 175 474 L165 465"
-                  fill="#a07828" opacity="0.10"/>
-
-            <!-- Palm creases -->
-            <path d="M170 448 Q210 454 255 451 Q295 449 330 441" stroke="#a07828" stroke-width="0.7" fill="none" opacity="0.35"/>
-            <path d="M175 462 Q215 468 252 465 Q285 463 315 456" stroke="#a07828" stroke-width="0.6" fill="none" opacity="0.25"/>
-
-            <!-- Finger separators -->
-            <line x1="212" y1="403" x2="210" y2="380" stroke="#a07828" stroke-width="0.7" opacity="0.45"/>
-            <line x1="250" y1="400" x2="251" y2="374" stroke="#a07828" stroke-width="0.7" opacity="0.45"/>
-            <line x1="284" y1="397" x2="286" y2="369" stroke="#a07828" stroke-width="0.7" opacity="0.45"/>
-            <line x1="310" y1="410" x2="315" y2="381" stroke="#a07828" stroke-width="0.7" opacity="0.45"/>
-
-            <!-- ══════════════════════
-                 SKULL — correct anatomy, elongated cranium
-                 ══════════════════════ -->
-
-            <!-- Cranium — taller than wide, flattened at top -->
-            <path d="M168 350
-                     Q168 245 250 238
-                     Q332 245 332 350
-                     L328 388 L172 388 Z"
-                  fill="url(#skullFill)"/>
-            <path d="M168 350
-                     Q168 245 250 238
-                     Q332 245 332 350
-                     L328 388 L172 388 Z"
-                  stroke="#a07828" stroke-width="1.4" fill="none"/>
-
-            <!-- Cranium highlight -->
-            <path d="M186 275 Q210 252 250 248 Q290 252 314 275"
-                  stroke="#c09840" stroke-width="0.9" fill="none" opacity="0.4"/>
-
-            <!-- Cheekbone / jaw — narrower than cranium -->
-            <path d="M172 388 Q170 412 180 428 Q196 444 250 446 Q304 444 320 428 Q330 412 328 388"
-                  fill="url(#skullFill)"/>
-            <path d="M172 388 Q170 412 180 428 Q196 444 250 446 Q304 444 320 428 Q330 412 328 388"
-                  stroke="#a07828" stroke-width="1.3" fill="none"/>
-
-            <!-- Jaw bottom -->
-            <path d="M196 444 Q222 455 250 456 Q278 455 304 444"
-                  stroke="#a07828" stroke-width="1" fill="none" opacity="0.65"/>
-
-            <!-- Teeth — fine lines -->
-            <path d="M212 445 L212 453 M223 447 L223 455 M234 449 L234 456 M245 450 L245 457 M255 450 L255 457 M266 449 L266 456 M277 447 L277 455 M288 445 L288 453"
-                  stroke="#a07828" stroke-width="1" opacity="0.5"/>
-            <path d="M210 453 Q250 462 290 453" stroke="#a07828" stroke-width="0.8" fill="none" opacity="0.35"/>
-
-            <!-- Left eye — almond shaped, not round -->
-            <path d="M188 318 Q200 298 228 298 Q248 298 252 318 Q248 338 228 340 Q200 340 188 318 Z"
-                  fill="#0e0c08"/>
-            <path d="M188 318 Q200 298 228 298 Q248 298 252 318 Q248 338 228 340 Q200 340 188 318 Z"
-                  stroke="#a07828" stroke-width="1.1" fill="none"/>
-
-            <!-- Right eye — mirror -->
-            <path d="M248 318 Q252 298 272 298 Q300 298 312 318 Q300 338 272 340 Q252 340 248 318 Z"
-                  fill="#0e0c08"/>
-            <path d="M248 318 Q252 298 272 298 Q300 298 312 318 Q300 338 272 340 Q252 340 248 318 Z"
-                  stroke="#a07828" stroke-width="1.1" fill="none"/>
-
-            <!-- Brow ridge -->
-            <path d="M182 296 Q210 282 250 280 Q290 282 318 296"
-                  stroke="#a07828" stroke-width="1" fill="none" opacity="0.5"/>
-
-            <!-- Nasal cavity — inverted heart shape -->
-            <path d="M240 370 Q244 355 250 350 Q256 355 260 370 Q257 382 250 384 Q243 382 240 370 Z"
-                  fill="#0e0c08"/>
-            <path d="M240 370 Q244 355 250 350 Q256 355 260 370 Q257 382 250 384 Q243 382 240 370 Z"
-                  stroke="#a07828" stroke-width="0.9" fill="none" opacity="0.7"/>
-
-            <!-- Temporal / cheekbone lines -->
-            <path d="M168 350 Q160 318 170 285 Q178 260 192 244"
-                  stroke="#a07828" stroke-width="0.7" fill="none" opacity="0.28"/>
-            <path d="M332 350 Q340 318 330 285 Q322 260 308 244"
-                  stroke="#a07828" stroke-width="0.7" fill="none" opacity="0.28"/>
-
-            <!-- Midline suture — subtle -->
-            <line x1="250" y1="238" x2="250" y2="280" stroke="#a07828" stroke-width="0.6" opacity="0.2" stroke-dasharray="3 4"/>
-
-            <!-- ── Quote ── -->
-            <text x="250" y="510"
-                  text-anchor="middle"
-                  font-family="'Cormorant Garamond', Georgia, serif"
-                  font-style="italic"
-                  font-size="17" fill="#a07828"
-                  letter-spacing="1" opacity="0.85">"To be or not to be."</text>
-
-            <!-- ── Bottom rule ── -->
-            <line x1="145" y1="560" x2="214" y2="560" stroke="#6a4e14" stroke-width="0.8"/>
-            <text x="250" y="564"
-                  text-anchor="middle"
-                  font-family="'Cinzel', Georgia, serif"
-                  font-size="8.5" fill="#a07828"
-                  letter-spacing="5" opacity="0.7">MMXXVI</text>
-            <line x1="286" y1="560" x2="355" y2="560" stroke="#6a4e14" stroke-width="0.8"/>
-
-          </svg>
-          <p class="pf-visual-label" data-en="Main Stage" data-pl="Duża Scena">Main Stage</p>
-
-            <!-- ══════════════════════
-                 HAND — open palm, fingers pointing left,
-                 skull resting in it, viewed from slight angle
-                 ══════════════════════ -->
-
-            <!-- Palm body — flat, wide, cradling -->
-            <path d="M148 430
-                     Q135 418 138 400 Q140 385 150 378
-                     Q160 370 175 372
-                     L188 360 Q195 350 205 352 Q212 354 213 364
-                     L212 375
-                     L224 355 Q230 344 242 346 Q250 348 251 360
-                     L250 372
-                     L258 350 Q264 338 276 340 Q285 342 286 355
-                     L284 370
-                     L292 356 Q298 347 308 350 Q316 354 315 366
-                     L310 382
-                     Q330 370 345 375 Q358 382 355 398
-                     Q352 412 338 420
-                     L300 438 Q275 448 250 450
-                     Q220 452 195 446
-                     L165 436 Z"
+            <!-- HAND — open palm from below, scaled up and repositioned -->
+            <path d="M148 360
+                     Q135 348 138 330 Q140 315 150 308
+                     Q160 300 175 302
+                     L188 290 Q195 280 205 282 Q212 284 213 294
+                     L212 305
+                     L224 285 Q230 274 242 276 Q250 278 251 290
+                     L250 302
+                     L258 280 Q264 268 276 270 Q285 272 286 285
+                     L284 300
+                     L292 286 Q298 277 308 280 Q316 284 315 296
+                     L310 312
+                     Q330 300 345 305 Q358 312 355 328
+                     Q352 342 338 350
+                     L300 368 Q275 378 250 380
+                     Q220 382 195 376
+                     L165 366 Z"
                   fill="#8a6a1e" opacity="0.15"/>
-
-            <!-- Palm outline — gold stroke -->
-            <path d="M148 430
-                     Q135 418 138 400 Q140 385 150 378
-                     Q160 370 175 372
-                     L188 360 Q195 350 205 352 Q212 354 213 364
-                     L212 375
-                     L224 355 Q230 344 242 346 Q250 348 251 360
-                     L250 372
-                     L258 350 Q264 338 276 340 Q285 342 286 355
-                     L284 370
-                     L292 356 Q298 347 308 350 Q316 354 315 366
-                     L310 382
-                     Q330 370 345 375 Q358 382 355 398
-                     Q352 412 338 420
-                     L300 438 Q275 448 250 450
-                     Q220 452 195 446
-                     L165 436 Z"
+            <path d="M148 360
+                     Q135 348 138 330 Q140 315 150 308
+                     Q160 300 175 302
+                     L188 290 Q195 280 205 282 Q212 284 213 294
+                     L212 305
+                     L224 285 Q230 274 242 276 Q250 278 251 290
+                     L250 302
+                     L258 280 Q264 268 276 270 Q285 272 286 285
+                     L284 300
+                     L292 286 Q298 277 308 280 Q316 284 315 296
+                     L310 312
+                     Q330 300 345 305 Q358 312 355 328
+                     Q352 342 338 350
+                     L300 368 Q275 378 250 380
+                     Q220 382 195 376
+                     L165 366 Z"
                   stroke="#8a6a1e" stroke-width="1.4" fill="none"/>
-
-            <!-- Thumb — left side, curves down -->
-            <path d="M148 430 Q138 445 140 462 Q143 478 155 482 Q168 484 175 472 Q180 460 175 445 L165 436"
+            <!-- Thumb -->
+            <path d="M148 360 Q138 375 140 392 Q143 408 155 412 Q168 414 175 402 Q180 390 175 375 L165 366"
                   stroke="#8a6a1e" stroke-width="1.4" fill="none"/>
-            <path d="M148 430 Q138 445 140 462 Q143 478 155 482 Q168 484 175 472 Q180 460 175 445 L165 436"
-                  fill="#8a6a1e" opacity="0.10"/>
+            <!-- Palm creases -->
+            <path d="M168 348 Q210 355 255 352 Q295 350 330 342" stroke="#8a6a1e" stroke-width="0.7" fill="none" opacity="0.4"/>
+            <path d="M172 362 Q215 368 252 366 Q285 363 315 355" stroke="#8a6a1e" stroke-width="0.6" fill="none" opacity="0.3"/>
+            <!-- Finger dividers -->
+            <line x1="212" y1="305" x2="210" y2="282" stroke="#8a6a1e" stroke-width="0.7" opacity="0.5"/>
+            <line x1="250" y1="302" x2="251" y2="276" stroke="#8a6a1e" stroke-width="0.7" opacity="0.5"/>
+            <line x1="284" y1="300" x2="286" y2="272" stroke="#8a6a1e" stroke-width="0.7" opacity="0.5"/>
+            <line x1="310" y1="312" x2="315" y2="282" stroke="#8a6a1e" stroke-width="0.7" opacity="0.5"/>
 
-            <!-- Palm crease lines -->
-            <path d="M168 418 Q210 425 255 422 Q295 420 330 412"
-                  stroke="#8a6a1e" stroke-width="0.7" fill="none" opacity="0.4"/>
-            <path d="M172 432 Q215 438 252 436 Q285 433 315 425"
-                  stroke="#8a6a1e" stroke-width="0.6" fill="none" opacity="0.3"/>
+            <!-- SKULL cranium fill -->
+            <ellipse cx="250" cy="222" rx="82" ry="76" fill="url(#skullFill)"/>
+            <ellipse cx="250" cy="222" rx="82" ry="76" stroke="#8a6a1e" stroke-width="1.5" fill="none"/>
+            <!-- Highlight arc -->
+            <path d="M182 202 Q200 180 250 174 Q300 180 318 202" stroke="#9a7828" stroke-width="0.9" fill="none" opacity="0.5"/>
 
-            <!-- Finger dividing lines on top edge -->
-            <line x1="212" y1="375" x2="210" y2="352" stroke="#8a6a1e" stroke-width="0.7" opacity="0.5"/>
-            <line x1="250" y1="372" x2="251" y2="346" stroke="#8a6a1e" stroke-width="0.7" opacity="0.5"/>
-            <line x1="284" y1="370" x2="286" y2="342" stroke="#8a6a1e" stroke-width="0.7" opacity="0.5"/>
-            <line x1="310" y1="382" x2="315" y2="352" stroke="#8a6a1e" stroke-width="0.7" opacity="0.5"/>
-
-            <!-- ══════════════════════
-                 SKULL — resting in palm
-                 ══════════════════════ -->
-
-            <!-- Skull cranium fill -->
-            <ellipse cx="250" cy="295" rx="90" ry="85" fill="url(#skullFill)"/>
-            <!-- Cranium stroke -->
-            <ellipse cx="250" cy="295" rx="90" ry="85" stroke="#8a6a1e" stroke-width="1.5" fill="none"/>
-
-            <!-- Cranium highlight arc -->
-            <path d="M178 272 Q196 248 250 242 Q304 248 322 272"
-                  stroke="#9a7828" stroke-width="0.9" fill="none" opacity="0.5"/>
-
-            <!-- Cheekbone / upper jaw -->
-            <path d="M170 348 Q168 368 178 382 Q195 396 250 398 Q305 396 322 382 Q332 368 330 348"
+            <!-- Jaw -->
+            <path d="M176 268 Q174 284 182 296 Q198 308 250 310 Q302 308 318 296 Q326 284 324 268"
                   stroke="#8a6a1e" stroke-width="1.3" fill="none"/>
-            <path d="M170 348 Q168 368 178 382 Q195 396 250 398 Q305 396 322 382 Q332 368 330 348"
+            <path d="M176 268 Q174 284 182 296 Q198 308 250 310 Q302 308 318 296 Q326 284 324 268"
                   fill="url(#skullFill)" opacity="0.95"/>
-
             <!-- Jaw line -->
-            <path d="M195 396 Q222 408 250 410 Q278 408 305 396"
-                  stroke="#8a6a1e" stroke-width="1" fill="none" opacity="0.7"/>
-
+            <path d="M196 308 Q222 320 250 322 Q278 320 304 308" stroke="#8a6a1e" stroke-width="1" fill="none" opacity="0.7"/>
             <!-- Teeth -->
-            <path d="M210 398 L210 408 M222 400 L222 410 M234 402 L234 411 M246 403 L246 412 M254 403 L254 412 M266 402 L266 411 M278 400 L278 410 M290 398 L290 408"
+            <path d="M212 310 L212 320 M224 312 L224 322 M236 313 L236 323 M248 314 L248 324 M256 314 L256 324 M268 313 L268 323 M280 312 L280 322 M292 310 L292 320"
                   stroke="#8a6a1e" stroke-width="1" opacity="0.55"/>
-            <path d="M208 408 Q250 418 292 408" stroke="#8a6a1e" stroke-width="0.8" fill="none" opacity="0.4"/>
 
-            <!-- Left eye socket -->
-            <ellipse cx="216" cy="304" rx="28" ry="32" fill="#0e0c08"/>
-            <ellipse cx="216" cy="304" rx="28" ry="32" stroke="#8a6a1e" stroke-width="1.1" fill="none"/>
-            <path d="M196 290 Q210 283 230 287" stroke="#9a7828" stroke-width="0.8" fill="none" opacity="0.35"/>
+            <!-- Left eye -->
+            <ellipse cx="218" cy="232" rx="26" ry="29" fill="#0e0c08"/>
+            <ellipse cx="218" cy="232" rx="26" ry="29" stroke="#8a6a1e" stroke-width="1.1" fill="none"/>
+            <!-- Right eye -->
+            <ellipse cx="282" cy="232" rx="26" ry="29" fill="#0e0c08"/>
+            <ellipse cx="282" cy="232" rx="26" ry="29" stroke="#8a6a1e" stroke-width="1.1" fill="none"/>
 
-            <!-- Right eye socket -->
-            <ellipse cx="284" cy="304" rx="28" ry="32" fill="#0e0c08"/>
-            <ellipse cx="284" cy="304" rx="28" ry="32" stroke="#8a6a1e" stroke-width="1.1" fill="none"/>
-            <path d="M264 290 Q278 283 298 287" stroke="#9a7828" stroke-width="0.8" fill="none" opacity="0.35"/>
-
-            <!-- Nasal cavity -->
-            <path d="M241 342 L250 326 L259 342 Q256 356 250 358 Q244 356 241 342 Z"
+            <!-- Nose -->
+            <path d="M242 264 L250 250 L258 264 Q255 276 250 278 Q245 276 242 264 Z"
                   fill="#0e0c08"/>
-            <path d="M241 342 L250 326 L259 342 Q256 356 250 358 Q244 356 241 342 Z"
+            <path d="M242 264 L250 250 L258 264 Q255 276 250 278 Q245 276 242 264 Z"
                   stroke="#8a6a1e" stroke-width="0.9" fill="none" opacity="0.7"/>
 
             <!-- Brow ridge -->
-            <path d="M178 272 Q216 258 250 260 Q284 258 322 272"
-                  stroke="#8a6a1e" stroke-width="1" fill="none" opacity="0.5"/>
+            <path d="M180 204 Q218 192 250 194 Q282 192 320 204" stroke="#8a6a1e" stroke-width="1" fill="none" opacity="0.5"/>
 
-            <!-- Temporal lines -->
-            <path d="M170 348 Q160 316 168 280 Q174 254 190 236"
-                  stroke="#8a6a1e" stroke-width="0.8" fill="none" opacity="0.3"/>
-            <path d="M330 348 Q340 316 332 280 Q326 254 310 236"
-                  stroke="#8a6a1e" stroke-width="0.8" fill="none" opacity="0.3"/>
-
-            <!-- ── Quote ── -->
-            <text x="250" y="482"
+            <!-- Quote -->
+            <text x="250" y="408"
                   text-anchor="middle"
                   font-family="'Cormorant Garamond', Georgia, serif"
                   font-style="italic"
-                  font-size="17" fill="#8a6a1e"
+                  font-size="15" fill="#8a6a1e"
                   letter-spacing="1" opacity="0.9">"To be or not to be."</text>
 
-            <!-- ── Bottom rule + label ── -->
-            <line x1="140" y1="536" x2="210" y2="536" stroke="#5a4010" stroke-width="0.8"/>
-            <text x="250" y="540"
+            <!-- Bottom rule + label -->
+            <line x1="148" y1="436" x2="212" y2="436" stroke="#5a4010" stroke-width="0.8"/>
+            <text x="250" y="440"
                   text-anchor="middle"
                   font-family="'Cinzel', Georgia, serif"
-                  font-size="9" fill="#8a6a1e"
+                  font-size="8" fill="#8a6a1e"
                   letter-spacing="5">MAIN STAGE</text>
-            <line x1="290" y1="536" x2="360" y2="536" stroke="#5a4010" stroke-width="0.8"/>
+            <line x1="288" y1="436" x2="352" y2="436" stroke="#5a4010" stroke-width="0.8"/>
 
           </svg>
           <p class="pf-visual-label" data-en="Main Stage" data-pl="Duża Scena">Main Stage</p>
@@ -633,27 +472,18 @@
       </p>
       <div class="about-rule"></div>
     </div>
-
     <div class="about-content">
       <h2 class="reveal" data-en="A theatre built on the conviction that old texts ask new questions." data-pl="Teatr zbudowany na przekonaniu, że stare teksty zadają nowe pytania.">A theatre built on the conviction that <em>old texts ask new questions.</em></h2>
-
       <p class="reveal reveal-d1" data-en="Stonegate was founded in 1891 in a former granary on Grodzka Street. The building still has its original stone walls. The programming has changed considerably." data-pl="Stonegate powstał w 1891 roku w dawnym spichlerzu przy ulicy Grodzkiej. Budynek zachował oryginalne kamienne mury. Repertuar zmienił się znacznie.">
         Stonegate was founded in 1891 in a former granary on Grodzka Street.
-        The building still has its original stone walls. The programming has
-        changed considerably.
+        The building still has its original stone walls. The programming has changed considerably.
       </p>
       <p class="reveal reveal-d1" data-en="We do not produce heritage. We produce theatre — work that takes a text written centuries ago and asks why it has not yet gone quiet. Every production begins with the same question: what does this play know that we have forgotten?" data-pl="Nie produkujemy dziedzictwa. Produkujemy teatr — pracę, która bierze tekst napisany wieki temu i pyta, dlaczego wciąż nie milczy. Każda produkcja zaczyna się od tego samego pytania: co ta sztuka wie, o czym my zapomnieliśmy?">
-        We do not produce heritage. We produce theatre — work that takes a text
-        written centuries ago and asks why it has not yet gone quiet.
-        Every production begins with the same question: what does this play
-        know that we have forgotten?
+        We do not produce heritage. We produce theatre — work that takes a text written centuries ago and asks why it has not yet gone quiet. Every production begins with the same question: what does this play know that we have forgotten?
       </p>
       <p class="reveal reveal-d2" data-en="Our ensemble is permanent. Our designers work across seasons, not projects. The result is a house with a recognisable aesthetic: spare, stone-dark, attentive to language." data-pl="Nasz zespół jest stały. Nasi scenografowie pracują przez całe sezony, nie nad pojedynczymi projektami. Efektem jest teatr o rozpoznawalnej estetyce: oszczędnej, kamienno-ciemnej, uważnej na język.">
-        Our ensemble is permanent. Our designers work across seasons, not projects.
-        The result is a house with a recognisable aesthetic: spare, stone-dark,
-        attentive to language.
+        Our ensemble is permanent. Our designers work across seasons, not projects. The result is a house with a recognisable aesthetic: spare, stone-dark, attentive to language.
       </p>
-
       <div class="about-stats reveal reveal-d3">
         <div>
           <span class="stat-num">133</span>
@@ -680,7 +510,6 @@
       </div>
       <a href="#" class="btn-solid" onclick="openModal(event)" data-en="Book Tickets" data-pl="Kup Bilety">Book Tickets</a>
     </div>
-
     <div class="visit-strip reveal" id="visit">
       <div class="visit-item">
         <p class="visit-label" data-en="Address" data-pl="Adres">Address</p>
@@ -708,8 +537,7 @@
         <p class="footer-brand-name">Stonegate</p>
         <p class="footer-brand-sub" data-en="Theatre · Est. 1891 · Kraków" data-pl="Teatr · Zał. 1891 · Kraków">Theatre · Est. 1891 · Kraków</p>
         <p class="footer-brand-desc" data-en="A permanent ensemble company dedicated to the classical repertoire, staged without apology for the present." data-pl="Stały zespół artystyczny poświęcony repertuarowi klasycznemu, wystawianemu bez przeprosin dla teraźniejszości.">
-          A permanent ensemble company dedicated to the classical repertoire,
-          staged without apology for the present.
+          A permanent ensemble company dedicated to the classical repertoire, staged without apology for the present.
         </p>
       </div>
       <div class="footer-col">
@@ -745,8 +573,6 @@
       <p class="footer-sig" data-en="Where stone remembers what the living forget." data-pl="Gdzie kamień pamięta to, o czym żywi zapomnieli.">Where stone remembers what the living forget.</p>
     </div>
   </footer>
-
-  <!-- ─── JAVASCRIPT ─── -->
 
   <script src="script.js"></script>
 
