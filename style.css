@@ -1180,12 +1180,7 @@
       .hero-right::before { display: none; }
 
       .production-featured { grid-template-columns: 1fr; }
-      .pf-visual {
-        display: block;
-        height: 85vw;
-        max-height: 420px;
-        min-height: 0;
-      }
+      .pf-visual { display: none; }
       .pf-text { padding: 3rem 2.5rem; }
       .productions-grid { grid-template-columns: 1fr; }
       .season-inner { padding: 5rem 2.5rem; }
