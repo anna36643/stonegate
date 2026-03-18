@@ -1,5 +1,4 @@
-
-    /* ─── VARIABLES ─── */
+/* ─── VARIABLES ─── */
     :root {
       --stone:        #1e1b17;
       --stone-2:      #272319;
@@ -1166,17 +1165,15 @@
       .nav-links li:not(:last-child):not(:nth-last-child(2)) { display: none; }
 
       .hero { grid-template-columns: 1fr; min-height: auto; }
-      /* hide arch on mobile — show only text hero */
       .hero-right { display: none; }
       .hero-left {
-        padding: 6rem 2.5rem 4rem;
+        padding: 5rem 2.5rem 4rem;
         justify-content: flex-start;
-        min-height: 100svh;
+        min-height: auto;
       }
       .hero-right::before { display: none; }
 
       .production-featured { grid-template-columns: 1fr; }
-      /* hide Hamlet illustration on mobile */
       .pf-visual { display: none; }
       .pf-text { padding: 3rem 2.5rem; }
       .productions-grid { grid-template-columns: 1fr; }
@@ -1201,41 +1198,36 @@
        ══════════════════════════════════════ */
     @media (max-width: 600px) {
       /* ── Nav ── */
-      nav {
-        padding: 0.9rem 1.2rem;
-        gap: 0.5rem;
-      }
+      nav { padding: 0.9rem 1.2rem; gap: 0.5rem; }
       nav.scrolled { padding: 0.7rem 1.2rem; }
       .nav-logo-main { font-size: 0.75rem; letter-spacing: 0.15em; }
       .nav-logo-sub { display: none; }
       .nav-links li { display: none; }
-      .nav-links li:last-child {
-        display: block;
-      }
-      /* make Get Tickets button smaller on mobile */
-      .nav-ticket {
-        font-size: 0.5rem;
-        padding: 0.55rem 0.9rem;
-        letter-spacing: 0.15em;
-        white-space: nowrap;
-      }
+      .nav-links li:last-child { display: block; }
+      .nav-ticket { font-size: 0.5rem; padding: 0.55rem 0.9rem; letter-spacing: 0.15em; white-space: nowrap; }
       .lang-switcher { margin-left: 0.5rem; }
       .lang-btn { padding: 0.4rem 0.6rem; font-size: 0.5rem; }
 
-      /* ── Hero ── */
-      .hero-left { padding: 4.5rem 1.5rem 3rem; min-height: 100svh; }
+      /* ── Hero — no min-height, just natural content height ── */
+      .hero-left {
+        padding: 4.5rem 1.2rem 3rem;
+        min-height: auto;
+      }
       .hero-rule { margin: 1.2rem 0; }
       .hero-sub { margin-bottom: 2rem; font-size: 0.95rem; }
       .hero-actions { flex-direction: column; align-items: flex-start; gap: 1rem; }
       .hero-eyeline { margin-bottom: 1.5rem; }
 
-      /* ── Season ── */
-      #season > div { padding: 3.5rem 1.2rem !important; }
+      /* ── Season — full width, no side margins ── */
+      #season > div { padding: 3rem 0 !important; }
+      #season .season-header { padding: 0 1.2rem; margin-bottom: 2rem; }
+      .production-featured { border-left: none; border-right: none; }
       .pf-text { padding: 2rem 1.2rem; }
       .pf-title { font-size: 2rem; }
       .pf-meta { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .productions-grid { border-left: none; border-right: none; }
       .prod-card { padding: 2rem 1.2rem; }
-      .season-header { margin-bottom: 2.5rem; }
+      .season-header { margin-bottom: 2rem; }
 
       /* ── About ── */
       #about { padding: 3.5rem 1.2rem; }
@@ -1251,9 +1243,10 @@
 
       /* ── Tickets ── */
       #tickets { padding: 3rem 1.2rem; }
-      .visit-strip { grid-template-columns: 1fr 1fr; }
+      .visit-strip { grid-template-columns: 1fr 1fr; border-left: none; border-right: none; }
       .visit-item { padding: 1.5rem 1rem; }
       .tickets-text h2 { font-size: 1.4rem; }
+      .tickets-inner { padding-bottom: 3rem; }
 
       /* ── Footer ── */
       footer { padding: 2.5rem 1.2rem 1.5rem; }
