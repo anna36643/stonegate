@@ -1166,12 +1166,18 @@
       .nav-links li:not(:last-child):not(:nth-last-child(2)) { display: none; }
 
       .hero { grid-template-columns: 1fr; min-height: auto; }
-      .hero-right { min-height: 60vw; max-height: 480px; }
-      .hero-left { padding: 6rem 2.5rem 4rem; justify-content: flex-start; }
+      /* hide arch on mobile — show only text hero */
+      .hero-right { display: none; }
+      .hero-left {
+        padding: 6rem 2.5rem 4rem;
+        justify-content: flex-start;
+        min-height: 100svh;
+      }
       .hero-right::before { display: none; }
 
       .production-featured { grid-template-columns: 1fr; }
-      .pf-visual { min-height: 70vw; max-height: 500px; }
+      /* hide Hamlet illustration on mobile */
+      .pf-visual { display: none; }
       .pf-text { padding: 3rem 2.5rem; }
       .productions-grid { grid-template-columns: 1fr; }
       #season > div { padding: 5rem 2.5rem !important; }
@@ -1194,42 +1200,71 @@
        RESPONSIVE — 600px (mobile)
        ══════════════════════════════════════ */
     @media (max-width: 600px) {
-      nav { padding: 1rem 1.5rem; }
-      nav.scrolled { padding: 0.8rem 1.5rem; }
+      /* ── Nav ── */
+      nav {
+        padding: 0.9rem 1.2rem;
+        gap: 0.5rem;
+      }
+      nav.scrolled { padding: 0.7rem 1.2rem; }
+      .nav-logo-main { font-size: 0.75rem; letter-spacing: 0.15em; }
+      .nav-logo-sub { display: none; }
       .nav-links li { display: none; }
-      .nav-links li:last-child { display: block; }
-      .lang-switcher { margin-left: 1rem; }
+      .nav-links li:last-child {
+        display: block;
+      }
+      /* make Get Tickets button smaller on mobile */
+      .nav-ticket {
+        font-size: 0.5rem;
+        padding: 0.55rem 0.9rem;
+        letter-spacing: 0.15em;
+        white-space: nowrap;
+      }
+      .lang-switcher { margin-left: 0.5rem; }
+      .lang-btn { padding: 0.4rem 0.6rem; font-size: 0.5rem; }
 
-      .hero-left { padding: 5rem 1.5rem 3rem; }
-      .hero-right { min-height: 70vw; max-height: 380px; }
-      .hero-rule { margin: 1.5rem 0; }
-      .hero-sub { margin-bottom: 2.5rem; }
-      .hero-actions { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
+      /* ── Hero ── */
+      .hero-left { padding: 4.5rem 1.5rem 3rem; min-height: 100svh; }
+      .hero-rule { margin: 1.2rem 0; }
+      .hero-sub { margin-bottom: 2rem; font-size: 0.95rem; }
+      .hero-actions { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .hero-eyeline { margin-bottom: 1.5rem; }
 
-      #season > div { padding: 4rem 1.5rem !important; }
-      .pf-text { padding: 2.5rem 1.5rem; }
-      .pf-meta { flex-direction: column; align-items: flex-start; gap: 1.2rem; }
-      .prod-card { padding: 2rem 1.5rem; }
+      /* ── Season ── */
+      #season > div { padding: 3.5rem 1.2rem !important; }
+      .pf-text { padding: 2rem 1.2rem; }
+      .pf-title { font-size: 2rem; }
+      .pf-meta { flex-direction: column; align-items: flex-start; gap: 1rem; }
+      .prod-card { padding: 2rem 1.2rem; }
+      .season-header { margin-bottom: 2.5rem; }
 
-      #about { padding: 4rem 1.5rem; }
-      .about-content h2 { font-size: 1.7rem; }
-      .about-stats { grid-template-columns: repeat(3, 1fr); gap: 1rem; }
-      .stat-num { font-size: 1.8rem; }
+      /* ── About ── */
+      #about { padding: 3.5rem 1.2rem; }
+      .about-content h2 { font-size: 1.6rem; }
+      .about-stats { grid-template-columns: repeat(3, 1fr); gap: 0.8rem; }
+      .stat-num { font-size: 1.6rem; }
+      .stat-lbl { font-size: 0.7rem; }
 
-      .quote-band { padding: 4rem 1.5rem; }
-      .quote-mark { font-size: 10rem; top: -1rem; }
+      /* ── Quote ── */
+      .quote-band { padding: 3.5rem 1.2rem; }
+      .quote-mark { font-size: 8rem; top: -0.5rem; }
+      .quote-text { font-size: 1.2rem; }
 
-      #tickets { padding: 3.5rem 1.5rem; }
+      /* ── Tickets ── */
+      #tickets { padding: 3rem 1.2rem; }
       .visit-strip { grid-template-columns: 1fr 1fr; }
+      .visit-item { padding: 1.5rem 1rem; }
+      .tickets-text h2 { font-size: 1.4rem; }
 
-      footer { padding: 3rem 1.5rem 2rem; }
+      /* ── Footer ── */
+      footer { padding: 2.5rem 1.2rem 1.5rem; }
       .footer-top { grid-template-columns: 1fr; gap: 2rem; }
-      .footer-bottom { flex-direction: column; gap: 0.8rem; text-align: center; }
+      .footer-bottom { flex-direction: column; gap: 0.6rem; text-align: center; }
 
-      .modal { margin: 0; width: 100%; max-width: 100%; position: fixed; bottom: 0; }
+      /* ── Modal ── */
+      .modal { margin: 0; width: 100%; max-width: 100%; position: fixed; bottom: 0; border-radius: 0; }
       .modal-overlay { align-items: flex-end; }
-      .modal-top { padding: 2rem 1.5rem 1.5rem; }
-      .modal-body { padding: 1.5rem 1.5rem 2rem; }
+      .modal-top { padding: 1.5rem 1.2rem 1.2rem; }
+      .modal-body { padding: 1.2rem 1.2rem 1.5rem; }
       .form-row { grid-template-columns: 1fr; }
     }
 
